@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <title>My project</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="source/style.css">
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"> -->
+    <link data-react-helmet="true" rel="icon" href="https://d1j8pt39hxlh3d.cloudfront.net/emoji/emojione/5.0/png/unicode/32/1f4d6.png">
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="js/jquery.js"></script>
+   
+</head>
+<body onload="myAdoptive()">
+    <!-- <i class="fab fa-apple" style="font-size:300px;"></i> -->
+
+    <div class="menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <header>
+        <nav class="navigation">
+            <div class="navigation-logo">
+                <img src="assets/logo/logo.png">
+            </div>
+            <div class="navigation-menu">
+                <ul class="navigation-menu__items">
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><span id="demo"></span><li>
+                </ul>
+            </div>
+            <div class="navigation-input">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search" name="search" placeholder="Search..." value="">
+            </div>
+        </nav>
+        <nav class="navigation_little">
+            <div class="navigation_little-burger">
+                <div class="burger_menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="navigation_little-logo">
+                <img src="assets/logo/logo.png" >
+            </div>
+            <div class="navigation_ittle-search">
+                <i class="fas fa-search"></i>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <div id="sidebar">
+        
+        
+        <div class="sidebar-content" id="sidebar_content">
+            <ul class="sidebar-items">
+            
+                <li><a class="flip-1" onclick="myTree('panel-1')"><span>What is a GitBook</span><i class="fas fa-plus" onclick="Panel_Generate('panel-1')"></i><i class="fas fa-trash-alt" onclick="Panel_Delete('flip-1')"></i><i class="fas fa-edit" onclick="myInput_create('flip-1')"></i></a></li>
+                <li id="panel" class="panel-1" style="display: block;"> </li>
+
+                <li class="sidebar_items__title"><span>📌Getting started</span></li>
+                
+                <li><a class="flip-2" onclick="myTree('panel-2')"><span>What is an organization?</span><i class="fas fa-plus" onclick="Panel_Generate('panel-2')"></i><i class="fas fa-trash-alt" onclick="Panel_Delete('flip-2')"></i><i class="fas fa-edit" onclick="myInput_create('flip-2')"></i></a></li>
+                <li id="panel" class="panel-2" style="display: block;"> </li>
+
+                <li><a class="flip-3" onclick="myTree('panel-3')"><span>With insert palette</span><i class="fas fa-plus" onclick="Panel_Generate('panel-3')"></i><i class="fas fa-trash-alt" onclick="Panel_Delete('flip-3')"></i><i class="fas fa-edit" onclick="myInput_create('flip-3')"></i></a></li>
+                <li id="panel" class="panel-3" style="display: block;"> </li>
+
+                <li><a class="flip-4" onclick="myTree('panel-4')"><span>Create an organization</span><i class="fas fa-plus" onclick="Panel_Generate('panel-4')"></i><i class="fas fa-trash-alt" onclick="Panel_Delete('flip-4')"></i><i class="fas fa-edit" onclick="myInput_create('flip-4')"></i></a></li>
+                <li id="panel" class="panel-4" style="display: block;"> </li>
+             
+                <li class="sidebar_items__title"><span>🌌Spaces</span></li>
+                
+                <li><a class="flip-5" onclick="myTree('panel-5')"><span>Billing settings</span><i class="fas fa-plus" onclick="Panel_Generate('panel-5')"></i><i class="fas fa-trash-alt" onclick="Panel_Delete('flip-5')"></i><i class="fas fa-edit" onclick="myInput_create('flip-5')"></i></a></li>
+                <li id="panel" class="panel-5" style="display: block;"> </li>
+
+                <li><a class="flip-6" onclick="myTree('panel-6')"><span>Account settings</span><i class="fas fa-plus" onclick="Panel_Generate('panel-6')"></i><i class="fas fa-trash-alt" onclick="Panel_Delete('flip-6')"></i><i class="fas fa-edit" onclick="myInput_create('flip-6')"></i></a></li>
+                <li id="panel" class="panel-6" style="display: block;"> </li>
+
+                <li><a class="flip-7" onclick="myTree('panel-7')"><span>Export or delete your data</span><i class="fas fa-plus" onclick="Panel_Generate('panel-7')"></i><i class="fas fa-trash-alt" onclick="Panel_Delete('flip-7')"></i><i class="fas fa-edit" onclick="myInput_create('flip-7')"></i></a></li>
+                <li id="panel" class="panel-7" style="display: block;"> </li>
+
+                <li><a class="flip-8" onclick="myTree('panel-8')"><span>Editing pages</span><i class="fas fa-plus" onclick="Panel_Generate('panel-8')"></i><i class="fas fa-trash-alt" onclick="Panel_Delete('flip-8')"></i><i class="fas fa-edit" onclick="myInput_create('flip-8')"></i></a></li>
+                <li id="panel" class="panel-8" style="display: block;"> </li>
+
+
+
+                <li class="sidebar_items__title"><span>🏢Organizations</span></li>
+                <li id="flip" ><a>What is an organization? ></a></li>
+                <li id="panel" style="display: none;" class="panel">
+                    <a id="flip" class="flip" >With command palette ></a>
+                    
+                    <a>With insert palette</a>
+                </li>
+                <li><a href="">Create an organization</a></li>
+                <li><a href="">Organization settings</a></li>
+                <li><a href="">Billing settings</a></li>
+                <li class="sidebar_items__title"><span>👤Accounts</span></li>
+                <li><a href="">Account settings</a></li>
+                <li><a href="">Export or delete your data</a></li>
+                <li class="sidebar_items__title"><span>✍️Editing content</span></li>
+                <li><a href="">Editing pages</a></li>
+                <li><a href="">Content structure</a></li>
+                <li><a href="">Rich content</a></li>
+                <li><a href="">Rich text</a></li>
+                <li><a href="">Markdown</a></li>
+                <li><a href="">Variants</a></li>
+                <li><a href="">Embeds</a></li>
+                <li class="sidebar_items__title"><span>🤝Collaboration</span></li>
+                <li><a href="">What is a GitBook</a></li>
+                <li><a href="">What is a GitBook</a></li>
+                <li><a href="">What is a GitBook</a></li>
+                <li><a href="">What is a GitBook</a></li>
+                <li><a href="">What is a GitBook</a></li>
+            
+            </ul>
+        </div>
+    </div>
+
+    <div class="tips" id="tips" style="top: 100px; right: 0px;">
+        <div class="tips-title">
+            <h2>CONTENTS</h2>
+        </div>
+        <div class="tips-content">
+            <ul>
+                <li><a href="#create an account" id="tip create an account">Create an account</a></li>
+                <li><a href="#create a team" id="tip create a team">Create a team</a></li>
+                <li><a href="#structure your docs" id="tip structure your docs">Structure your docs</a></li>
+                <li><a href="#collaboration" id="tip collaboration">Collaboration</a></li>
+                <li><a href="#rich" id="tip rich">Rich text and rich content</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="content">
+            <div class="content-tittle">
+                <h1 class="asd" onclick="Name_Generate()">Start exploring</h1>
+            </div>
+            <br>
+            
+            <section>
+                <div class="content-text">
+                    <span>Do you think GitBook is the right fit for you and your needs?
+                          Let's go through some tips to start your onboarding.</span>
+                </div>
+            </section>
+            <section>
+                <div class="content-title-little">
+                    <h2 id="create an account">Create an account and start exploring GitBook</h2>
+                </div>
+                <div class="content-text">
+                    <span>GitBook is a service full of possibilities. To start exploring:‌</span>
+                    <ol>
+                        <li>​<a>Sign up</a><span> to create a new account and try it out for free with a 14-day trial</span></li>
+                        <li><a>Sign in</a><span> to GitBook and start creating a </span><a>space</a></li>
+                    </ol>
+                </div>
+                <div class="content-info">
+                    <span> <b>Tips:</b> If you're new to GitBook , you will first be prompted to create a space in a place dedicated to your personal projects.</span>
+                </div>
+            </section>
+            <section>
+                <div class="content-title-little">
+                    <h2 id="create a team">Create a team</h2>
+                </div>
+                <div class="content-text">
+                    <span>GitBook is a service full of possibilities. To start exploring:‌</span>
+                    <ol>
+                        <li>​<a>Sign up</a><span> to create a new account and try it out for free with a 14-day trial</span></li>
+                        <li><a>Sign in</a><span> to GitBook and start creating a </span><a>space</a></li>
+                    </ol>
+                </div>
+                <div class="content-info">
+                    <span> <b>Tips:</b> If you're new to GitBook , you will first be prompted to create a space in a place dedicated to your personal projects.</span>
+                </div>
+            </section>
+            <section>
+                <div class="content-title-little">
+                    <h2 id="structure your docs">Structure your docs</h2>
+                </div>
+                <div class="content-text">
+                    <span>GitBook is a service full of possibilities. To start exploring:‌</span>
+                    <ol>
+                        <li>​<a>Sign up</a><span> to create a new account and try it out for free with a 14-day trial</span></li>
+                        <li><a>Sign in</a><span> to GitBook and start creating a </span><a>space</a></li>
+                    </ol>
+                </div>
+                <div class="content-info">
+                    <span> <b>Tips:</b> If you're new to GitBook , you will first be prompted to create a space in a place dedicated to your personal projects.</span>
+                </div>
+            </section>
+            <section>
+                <div class="content-title-little">
+                    <h2 id="collaboration">Collaboration</h2>
+                </div>
+                <div class="content-text">
+                    <span>GitBook is a service full of possibilities. To start exploring:‌</span>
+                    <ol>
+                        <li>​<a>Sign up</a><span> to create a new account and try it out for free with a 14-day trial</span></li>
+                        <li><a>Sign in</a><span> to GitBook and start creating a </span><a>space</a></li>
+                    </ol>
+                </div>
+                <div class="content-info">
+                    <span> <b>Tips:</b> If you're new to GitBook , you will first be prompted to create a space in a place dedicated to your personal projects.</span>
+                </div>
+            </section>
+            <section>
+                <div class="content-title-little">
+                    <h2 id="rich">Rich text and rich content</h2>
+                </div>
+                <div class="content-text">
+                    <span>GitBook is a service full of possibilities. To start exploring:‌</span>
+                    <ol>
+                        <li>​<a>Sign up</a><span> to create a new account and try it out for free with a 14-day trial</span></li>
+                        <li><a>Sign in</a><span> to GitBook and start creating a </span><a>space</a></li>
+                    </ol>
+                </div>
+                <div class="content-info">
+                    <span> <b>Tips:</b> If you're new to GitBook , you will first be prompted to create a space in a place dedicated to your personal projects.</span>
+                </div>
+            </section>
+        </div>  
+    </main>
+
+    
+    
+</body>
+</html>
+
